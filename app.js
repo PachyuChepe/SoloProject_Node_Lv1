@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-// const cors = require("cors");
+const cors = require("cors");
 const https = require("https");
 const fs = require("fs");
 const YAML = require("yamljs");
@@ -25,12 +25,18 @@ app.get("/", (req, res) => {
   res.send("안녕하세요 세계!");
 });
 
-// const corsOptions = {
-//   origin: "http://localhost:3000",
-//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-// };
-
-// app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: [
+      "https://localhost:3000",
+      "http://localhost:3000",
+      "http://node-solo-lv1.kro.kr/",
+      "https://node-solo-lv1.kro.kr/",
+    ],
+    credentials: true,
+    // methods: ["GET", "POST", "OPTIONS", "PATCH", "DELETE"],
+  })
+);
 
 // 제품 관련 라우터 설정
 const productsSchema = require("./routes/productsRouter");
