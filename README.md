@@ -1,3 +1,3 @@
-# SoloProject_Node_Lv1
+# 배포 링크
 
-대충 과제 한다는 글
+https://node-solo-lv1.kro.kr/api/products
