@@ -1,14 +1,10 @@
-require("dotenv").config();
+const env = require("../config/config");
 const mongoose = require("mongoose");
-
-const DB_HOST = process.env.DATABASE_HOST;
-const DB_PORT = process.env.DATABASE_PORT;
-const DB_NAME = process.env.DATABASE_NAME;
 
 // MongoDB에 연결하는 함수
 const connect = () => {
   mongoose
-    .connect(`mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`)
+    .connect(env.MongoDB_LOCAL)
     .then(() => {
       console.log("✅ Connected to MongoDB successfully");
     })
