@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 // MongoDB에 연결하는 함수
 const connect = () => {
   mongoose
-    .connect(env.MongoDB_LOCAL)
+    .connect(env.MongoDB_ATLAS)
     .then(() => {
       console.log("✅ Connected to MongoDB successfully");
     })
