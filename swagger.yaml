@@ -7,7 +7,6 @@ info:
 servers:
 - url: https://virtserver.swaggerhub.com/PachyuChepe/testAPI/1.0.0
   description: SwaggerHub API Auto Mocking
-- url: http://localhost:3000
 - url: http://node-solo-lv1.kro.kr
 paths:
   /api/products:
