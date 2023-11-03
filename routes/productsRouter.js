@@ -12,7 +12,6 @@ router.post("/products", async (req, res) => {
     return res.status(400).json({ message: "데이터 형식이 올바르지 않습니다." });
   }
 
-  // 패스워드 암호화
   bcrypt.hash(password, saltRounds, async (err, hash) => {
     if (err) {
       return res.status(500).json({ message: "패스워드 암호화 실패" });
@@ -22,7 +21,7 @@ router.post("/products", async (req, res) => {
       title,
       content,
       author,
-      password: hash, // 암호화된 패스워드 저장
+      password: hash,
       status,
     });
 
@@ -77,7 +76,6 @@ router.put("/products/:userItemId", async (req, res) => {
       return res.status(404).json({ message: "상품이 존재하지 않습니다." });
     }
 
-    // 사용자가 입력한 패스워드와 DB에 저장된 암호화된 패스워드 비교
     bcrypt.compare(password, product.password, async (err, isMatch) => {
       if (err) {
         return res.status(500).json({ message: "비밀번호 비교 실패" });
@@ -110,7 +108,6 @@ router.delete("/products/:userItemId", async (req, res) => {
       return res.status(404).json({ message: "상품이 존재하지 않습니다." });
     }
 
-    // 사용자가 입력한 패스워드와 DB에 저장된 암호화된 패스워드 비교
     bcrypt.compare(password, product.password, async (err, isMatch) => {
       if (err) {
         return res.status(500).json({ message: "비밀번호 비교 실패" });
@@ -129,4 +126,3 @@ router.delete("/products/:userItemId", async (req, res) => {
 });
 
 module.exports = router;
-// await UserItem.findByIdAndDelete(userItemId);

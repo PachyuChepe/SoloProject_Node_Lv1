@@ -31,21 +31,6 @@ const userItemSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-
-  // viewCount: {
-  //   type: Number,
-  //   default: 0,
-  // },
-  // tags: {
-  //   type: String,
-  // },
-  // comments: [
-  //   {
-  //     text: String,
-  //     user: String,
-  //     date: Date,
-  //   },
-  // ],
 });
 
 userItemSchema.pre("save", async function (next) {
