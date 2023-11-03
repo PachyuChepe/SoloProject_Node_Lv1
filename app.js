@@ -3,6 +3,7 @@ const https = require("https");
 const express = require("express");
 const app = express();
 const env = require("./config/config");
+const productsSchema = require("./routes/productsRouter");
 // const goodsRouter = require("./routes/goods.js");
 // const cartsRouter = require("./routes/carts.js");
 
@@ -15,7 +16,7 @@ app.get("/", (req, res) => {
   res.send("안녕하세요 세계!");
 });
 
-// app.use("/api", [goodsRouter, cartsRouter]);
+app.use("/api", [productsSchema]);
 // const env.SERVER_PORT = process.env.SERVER_PORT || 4000;
 
 // 인증서가 존재하면 HTTPS, 그렇지 않을 경우 HTTP
