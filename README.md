@@ -4,11 +4,27 @@ http://node-solo-lv1.kro.kr<br><br>
 
 # swagger API
 
-CORS 에러 발생으로 인해 로컬(배포)환경에서 API 기능 테스트 불가<br>
-http://node-solo-lv1.kro.kr/api-docs<br><br>
+swagger API 기능 테스트 가능<br>
+https://node-solo-lv1.kro.kr/api-docs<br><br>
 
-# swagger API 기능 테스트
+# 기능 테스트 예시
 
-기능 테스트 정상 작동<br>
-DELETE 메서드엔 body가 있어선 안되는 듯 한데 과제라서 현상유지<br>
-https://app.swaggerhub.com/apis/PachyuChepe/testAPI/1.0.0<br>
+### 1. Server탭에서 사진과 동일한 URL 선택
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2BDz8%2FbtszGVSgRdg%2FZb2o1xOboXf24XGXf3FJYk%2Fimg.png)
+<br>
+
+### 2. Try it out 선택
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FniEeH%2FbtszGVxWdC5%2FCTnMK1owwvaVMeFLOpGNmK%2Fimg.png)
+<br>
+
+### 3. Execute 선택
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbdTKkP%2FbtszJZ7zZGl%2FmkhpwIY0B9QGjUrC3FuTUk%2Fimg.png)
+<br>
+
+### 4. 결과 확인
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcs5igT%2FbtszK9at8g5%2FZWvACC3EHvJ2LTOLLvm8J1%2Fimg.png)
+<br>
