@@ -4,7 +4,7 @@ http://node-solo-lv1.kro.kr
 
 # swagger API
 
-CORS 에러 발생으로 인해 로컬환경에서 API 기능 테스트 불가<br>
+CORS 에러 발생으로 인해 로컬(배포)환경에서 API 기능 테스트 불가<br>
 http://node-solo-lv1.kro.kr/api-docs
 
 # swagger API 기능 테스트
