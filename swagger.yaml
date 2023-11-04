@@ -8,8 +8,11 @@ servers:
 - url: https://virtserver.swaggerhub.com/PachyuChepe/testAPI/1.0.0
   description: SwaggerHub API Auto Mocking
 - url: http://aws-node-project.kro.kr/
+  description: HTTP 배포 주소
 - url: https://node-solo-lv1.kro.kr
+  description: HTTPS(?) 배포 주소
 - url: http://localhost:3000
+  description: 로컬 개발 서버 주소
 paths:
   /api/products:
     get:

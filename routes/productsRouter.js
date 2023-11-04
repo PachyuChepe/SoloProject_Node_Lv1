@@ -38,7 +38,7 @@ router.post("/product", async (req, res) => {
 // Read (상품 목록 조회)
 router.get("/products", async (req, res) => {
   try {
-    const products = await UserItem.find({});
+    const products = await UserItem.find({}).sort({ createdAt: -1 });
     return res.status(200).json({ data: products });
   } catch (err) {
     return res.status(500).json({ message: "상품 목록 조회에 실패하였습니다." });
