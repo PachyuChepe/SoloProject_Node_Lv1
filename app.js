@@ -34,7 +34,6 @@ app.use(
       "https://node-solo-lv1.kro.kr/",
     ],
     credentials: true,
-    // methods: ["GET", "POST", "OPTIONS", "PATCH", "DELETE"],
   })
 );
 
@@ -57,7 +56,3 @@ if (fs.existsSync("./key.pem") && fs.existsSync("./cert.pem")) {
 }
 
 module.exports = server;
-
-// app.listen(env.SERVER_PORT, () => {
-//   console.log(`HTTP server is running on port ${env.SERVER_PORT}`);
-// });
