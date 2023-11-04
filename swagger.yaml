@@ -142,6 +142,8 @@ components:
           type: string
         password:
           type: string
+        status:
+          type: string
     inline_response_200_1:
       type: object
       properties:
@@ -163,6 +165,8 @@ components:
         title:
           type: string
         content:
+          type: string
+        author:
           type: string
         password:
           type: string
