@@ -5,7 +5,8 @@ http://node-solo-lv1.kro.kr<br><br>
 # swagger API
 
 swagger API 기능 테스트 가능<br>
-https://node-solo-lv1.kro.kr/api-docs<br><br>
+HTTP http://aws-node-project.kro.kr/api-docs/<br>
+HTTPS https://node-solo-lv1.kro.kr/api-docs<br><br>
 
 # 기능 테스트 예시
 
