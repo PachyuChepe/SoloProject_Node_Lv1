@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 // Create (상품 등록)
-router.post("/products", async (req, res) => {
+router.post("/product", async (req, res) => {
   const { title, content, author, password, status } = req.body;
 
   if (!title || !content || !author || !password || !status) {
@@ -46,7 +46,7 @@ router.get("/products", async (req, res) => {
 });
 
 // Read (상품 상세 조회)
-router.get("/products/:userItemId", async (req, res) => {
+router.get("/product/:userItemId", async (req, res) => {
   const userItemId = req.params.userItemId;
 
   try {
@@ -62,7 +62,7 @@ router.get("/products/:userItemId", async (req, res) => {
 });
 
 // Update (상품 정보 수정)
-router.put("/products/:userItemId", async (req, res) => {
+router.put("/product/:userItemId", async (req, res) => {
   const userItemId = req.params.userItemId;
   const { title, content, password, status } = req.body;
 
@@ -98,7 +98,7 @@ router.put("/products/:userItemId", async (req, res) => {
 });
 
 // Delete (상품 삭제)
-router.delete("/products/:userItemId", async (req, res) => {
+router.delete("/product/:userItemId", async (req, res) => {
   const userItemId = req.params.userItemId;
   const { password } = req.body;
 

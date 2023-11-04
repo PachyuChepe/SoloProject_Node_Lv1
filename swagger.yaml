@@ -24,13 +24,14 @@ paths:
                 $ref: '#/components/schemas/inline_response_200'
         "500":
           description: 상품 목록 조회에 실패하였습니다.
+  /api/product:
     post:
       summary: 상품 등록
       requestBody:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/api_products_body'
+              $ref: '#/components/schemas/api_product_body'
       responses:
         "201":
           description: 판매 상품을 등록하였습니다.
@@ -38,7 +39,7 @@ paths:
           description: 데이터 형식이 올바르지 않습니다.
         "500":
           description: 서버에서 오류가 발생하였습니다.
-  /api/products/{userItemId}:
+  /api/product/{userItemId}:
     get:
       summary: 상품 상세 조회
       parameters:
@@ -74,7 +75,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/products_userItemId_body'
+              $ref: '#/components/schemas/product_userItemId_body'
       responses:
         "200":
           description: 상품 정보를 수정하였습니다.
@@ -100,7 +101,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/products_userItemId_body_1'
+              $ref: '#/components/schemas/product_userItemId_body_1'
       responses:
         "200":
           description: 상품을 삭제하였습니다.
@@ -130,7 +131,7 @@ components:
                 type: string
               createdAt:
                 type: string
-    api_products_body:
+    api_product_body:
       type: object
       properties:
         title:
@@ -156,7 +157,7 @@ components:
           type: string
         createdAt:
           type: string
-    products_userItemId_body:
+    product_userItemId_body:
       type: object
       properties:
         title:
@@ -167,7 +168,7 @@ components:
           type: string
         status:
           type: string
-    products_userItemId_body_1:
+    product_userItemId_body_1:
       type: object
       properties:
         password:
