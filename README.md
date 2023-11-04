@@ -1,12 +1,13 @@
 # 배포 링크
 
-http://node-solo-lv1.kro.kr<br><br>
+http://aws-node-project.kro.kr<br>
+https://node-solo-lv1.kro.kr<br>
 
 # swagger API
 
 swagger API 기능 테스트 가능<br>
 HTTP http://aws-node-project.kro.kr/api-docs/<br>
-HTTPS https://node-solo-lv1.kro.kr/api-docs<br><br>
+HTTPS(?) https://node-solo-lv1.kro.kr/api-docs<br><br>
 
 # 기능 테스트 예시
 
