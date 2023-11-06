@@ -33,6 +33,7 @@ const userItemSchema = new mongoose.Schema({
   },
 });
 
+// userItemId 카운트 미들웨어
 userItemSchema.pre("save", async function (next) {
   if (!this.userItemId) {
     try {

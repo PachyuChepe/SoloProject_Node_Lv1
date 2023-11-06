@@ -1,19 +1,19 @@
 # 배포 링크
 
 http://aws-node-project.kro.kr<br>
-https://node-solo-lv1.kro.kr<br>
+~~https://node-solo-lv1.kro.kr<br>~~
 
 # swagger API
 
 swagger API 기능 테스트 가능<br>
 HTTP http://aws-node-project.kro.kr/api-docs/<br>
-HTTPS(?) https://node-solo-lv1.kro.kr/api-docs<br><br>
+~~HTTPS(?) https://node-solo-lv1.kro.kr/api-docs~~<br><br>
 
 # 기능 테스트 예시
 
-### 1. Server탭에서 테스트할 주소 선택 (DB 동일)
+### 1. Server탭에서 테스트할 주소 선택 (HTTP swagger API 링크로 들어갔을 경우 HTTP 배포 주소)
 
-![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb2BDz8%2FbtszGVSgRdg%2FZb2o1xOboXf24XGXf3FJYk%2Fimg.png)
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcuXKL8%2FbtszL9BCkSY%2FwWjcvM8wfiwjtNR7kygEYk%2Fimg.png)
 <br>
 
 ### 2. Try it out 선택
