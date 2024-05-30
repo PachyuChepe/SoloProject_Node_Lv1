@@ -1,5 +1,4 @@
-import mongoose from 'mongoose';
-
+const mongoose = require('mongoose');
 const connect = () => {
   // mongoose.connect는 MongoDB 서버에 연결하는 메서드입니다.
   mongoose
